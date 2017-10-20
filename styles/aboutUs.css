@@ -49,6 +49,12 @@
     background-color: #CDD0D6;
 }
 
+#home:hover {
+    background-color: #393A3D;
+    cursor: pointer;
+    color: #CDD0D6;
+}
+
 #aboutUs {
     width: 195px;
     height: inherit;
@@ -64,11 +70,23 @@
     background-color: #CDD0D6;
 }
 
+#rush:hover {
+    background-color: #393A3D;
+    cursor: pointer;
+    color: #CDD0D6;
+}
+
 #philanthropy {
     width: 195px;
     height: inherit;
     float: left;
     background-color: #CDD0D6;
+}
+
+#philanthropy:hover {
+    background-color: #393A3D;
+    cursor: pointer;
+    color: #CDD0D6;
 }
 
 #tekeTalk {
@@ -78,6 +96,12 @@
     background-color: #CDD0D6;
 }
 
+#tekeTalk:hover {
+    background-color: #393A3D;
+    cursor: pointer;
+    color: #CDD0D6;
+}
+
 #titleTextBox {
     width: inherit;
     height: 50%;
@@ -85,6 +109,7 @@
     color: white;
     font-size: 54pt;
 }
+
 #textBox {
     width: 50%;
     margin-bottom: 3px;
@@ -93,3 +118,50 @@
     margin-right: auto;
     text-align: center;
 }
+
+.dropbtn {
+    width: 195px;
+    height: inherit;
+    float: left;
+    background-color: #575A5E;
+    color: #CDD0D6;
+    border: 0;
+    font-size: 12pt;
+}
+
+.dropbtn:hover {
+    background-color: #393A3D;
+    cursor: pointer;
+    color: #CDD0D6;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 30px;
+    width: 195px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #393A3D;
+    cursor: pointer;
+    color: #CDD0D6;
+}
+
+.show {display:block;}
