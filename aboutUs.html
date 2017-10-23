@@ -20,11 +20,13 @@
                     </div>
                 </div>
                 <div id="tabs">
-                    <div id="home">
-                        <div id="textBox">
-                            Home
+                    <a class="unclickedTab" href="home.html">
+                        <div>
+                            <div id="textBox">
+                                Home
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <div id="aboutUs">
                         <button onclick="dropdown()" class="dropbtn">About Us</button>
@@ -35,39 +37,78 @@
                         </div>
                     </div>
 
-                    <div id="rush">
-                        <div id="textBox">
-                            Rush
+                    <a class="unclickedTab" href="rush.html">
+                        <div>
+                            <div id="textBox">
+                                Rush
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div id="philanthropy">
-                        <div id="textBox">
-                            Philanthropy
+                    <a class="unclickedTab" href="philanthropy.html">
+                        <div>
+                            <div id="textBox">
+                                Philanthropy
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div id="tekeTalk">
-                        <div id="textBox">
-                            Teke Talk
+                    <a class="unclickedTab" href="tekeTalk.html">
+                        <div>
+                            <div id="textBox">
+                                Teke Talk
+                            </div>
                         </div>
-                    </div>
+                    </a>
+
                 </div>
             </div>
         </div>
 
         <div id="body">
+            <div id="ourHistory" class="bodyText">
+                <div id="ourHistoryBanner" class="bodyBanner">
+                    <div class="bannerTitle">
+                        Our Unique History
+                    </div>
+                </div>
 
+                <div id="ourHistoryText" class="text">
+                    The Alpha Zeta chapter of Tau Kappa Epsilon is the longest running chapter in TKE history. Our chapter was founded on December 20, 1928, and we have not shut down since. We are one of only two chapters that kept our house during WWII. The only other chapter to keep their house during this period was the Alpha Phi chapter at the University of Kansas.
+                </div>
+            </div>
+
+            <div id="ourMission" class="bodyText">
+                <div id="ourMissionBanner" class="bodyBanner">
+                    <div class="bannerTitle">
+                        Our Mission Statement
+                    </div>
+                </div>
+
+                <div id="ourMissionText" class="text">
+                    We, the Alpha-Zeta Chapter of Tau Kappa Epsilon, strive to be the Fraternity for Life, aiding young men with their mental, social, physical, and spritual growth with a brotherhood based upon the principles of Love, Charity, and Esteem. We aim for our brothers to be quality citizens of the community and society.
+                </div>
+            </div>
+
+
+            <div id="ourVision" class="bodyText">
+                <div id="ourVisionBanner" class="bodyBanner">
+                    <div class="bannerTitle">
+                        Our Vision Statement
+                    </div>
+                </div>
+
+                <div id="ourVisionText" class="text">
+                    We, the Alpha-Zeta Chapter of Tau Kappa Epsilon, strive to be the Fraternity for Life, aiding young men with their mental, social, physical, and spritual growth with a brotherhood based upon the principles of Love, Charity, and Esteem. We aim for our brothers to be quality citizens of the community and society.
+                </div>
+            </div>
         </div>
 
     <script>
-    /* When the user clicks on the button,
-    toggle between hiding and showing the dropdown content */
     function dropdown() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
 
-    // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
 
