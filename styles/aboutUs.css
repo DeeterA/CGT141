@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+#body {
+    font-family: 'Roboto', sans-serif;
+}
+
 #tabContainer {
     width: 975px;
     height: inherit;
@@ -42,14 +46,16 @@
     color: #575A5E;
 }
 
-#home {
+.unclickedTab {
     width: 195px;
     height: inherit;
     float: left;
     background-color: #CDD0D6;
+    text-decoration: none;
+    color: #575A5E;
 }
 
-#home:hover {
+.unclickedTab:hover {
     background-color: #393A3D;
     cursor: pointer;
     color: #CDD0D6;
@@ -60,45 +66,6 @@
     height: inherit;
     float: left;
     background-color: #575A5E;
-    color: #CDD0D6;
-}
-
-#rush {
-    width: 195px;
-    height: inherit;
-    float: left;
-    background-color: #CDD0D6;
-}
-
-#rush:hover {
-    background-color: #393A3D;
-    cursor: pointer;
-    color: #CDD0D6;
-}
-
-#philanthropy {
-    width: 195px;
-    height: inherit;
-    float: left;
-    background-color: #CDD0D6;
-}
-
-#philanthropy:hover {
-    background-color: #393A3D;
-    cursor: pointer;
-    color: #CDD0D6;
-}
-
-#tekeTalk {
-    width: 195px;
-    height: inherit;
-    float: left;
-    background-color: #CDD0D6;
-}
-
-#tekeTalk:hover {
-    background-color: #393A3D;
-    cursor: pointer;
     color: #CDD0D6;
 }
 
@@ -165,3 +132,30 @@
 }
 
 .show {display:block;}
+
+.bodyText {
+    height: 275px;
+    width: 975px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.bodyBanner {
+    background-color: #AD2624;
+    color: white;
+    height: 64px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.bannerTitle {
+    height: 60%;
+    font-size: 32;
+    padding: 13;
+}
+
+.text {
+    padding: 13;
+    font-size: 24;
+}
