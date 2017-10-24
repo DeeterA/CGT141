@@ -55,9 +55,18 @@
     color: #575A5E;
 }
 
-.unclickedTab:hover {
+.clickedTab:hover, .unclickedTab:hover {
     background-color: #393A3D;
     cursor: pointer;
+    color: #CDD0D6;
+}
+
+.clickedTab {
+    width: 195px;
+    height: inherit;
+    float: left;
+    background-color: #575A5E;
+    text-decoration: none;
     color: #CDD0D6;
 }
 
@@ -132,30 +141,3 @@
 }
 
 .show {display:block;}
-
-.bodyText {
-    height: 275px;
-    width: 975px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.bodyBanner {
-    background-color: #AD2624;
-    color: white;
-    height: 64px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.bannerTitle {
-    height: 60%;
-    font-size: 32;
-    padding: 13;
-}
-
-.text {
-    padding: 13;
-    font-size: 24;
-}
