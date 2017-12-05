@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+}
+
+#header {
+    background-color: black;
+    width: 100%;
+    height: 242px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#content {
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 100%;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid rgba(160, 160, 159, 1);
+    padding-bottom: 16px;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#picText {
+    margin-top: 0;
+    float: left;
+    width: 40%;
+}
+
+#row {
+    width: 100%;
+}
+#column {
+    position: relative;
+    float: left;
+    width: 33%
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 148;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gray;
+    width: 142;
+    left: 3;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#column:hover .overlay {
+    opacity: .75;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+.pic {
+    margin: 4px;
+    height: 146px;
+    width: 140px;
+}
+
+#picPreview {
+    width: 50%;
+    height: 400;
+    float: right;
+    margin-left: 20px;
+}
+
+#tabContainer {
+    width: 975px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#titleBanner {
+    width: inherit;
+    height: 212px;
+    background-color: black;
+    position: relative;
+}
+
+#image {
+    height: 202px;
+    width: 240px;
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+}
+
+#title {
+    height: inherit;
+    width: 735px;
+    float: right;
+}
+#tabs {
+    width: inherit;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    color: #575A5E;
+}
+
+.unclickedTab {
+    width: 195px;
+    height: inherit;
+    float: left;
+    background-color: #CDD0D6;
+    text-decoration: none;
+    color: #575A5E;
+}
+
+.clickedTab:hover, .unclickedTab:hover {
+    background-color: #393A3D;
+    cursor: pointer;
+    color: #CDD0D6;
+}
+
+.clickedTab {
+    width: 195px;
+    height: inherit;
+    float: left;
+    background-color: #575A5E;
+    text-decoration: none;
+    color: #CDD0D6;
+}
+
+#aboutUs {
+    width: 195px;
+    height: inherit;
+    float: left;
+    background-color: #575A5E;
+    color: #575A5E;
+}
+
+#titleTextBox {
+    width: inherit;
+    height: 50%;
+    padding-top: 20px;
+    color: white;
+    font-size: 54pt;
+}
+
+#textBox {
+    width: 50%;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.dropbtn {
+    width: 195px;
+    height: inherit;
+    float: left;
+    background-color: #CDD0D6;
+    color: #575A5E;
+    border: 0;
+    font-size: 12pt;
+}
+
+.dropbtn:hover {
+    background-color: #393A3D;
+    cursor: pointer;
+    color: #CDD0D6;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 30px;
+    width: 195px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #393A3D;
+    cursor: pointer;
+    color: #CDD0D6;
+}
+
+.show {display:block;}
