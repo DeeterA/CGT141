@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>About us</title>
-        <link rel="stylesheet" type="text/css" href="styles/contactUs.css">
+        <link rel="stylesheet" type="text/css" href="styles/contact.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
 
@@ -74,13 +74,18 @@
                     </div>
                 </div>
 
-                <form action="doContact.php" method="post">
-                    First name: <input type="text" name="firstName"><br>
-                    Last name: <input type="text" name="lastName"><br>
-                    Email: <input type="text" name="email"><br>
-                    Subject: <input type="text" name="subject"><br>
-                    Message: <input type="text" name="message"><br>
-                    <input type="submit" value="Submit">
+                <form id="emailForm" action="doContact.php" method="post">
+                    First name:<br>
+                    <input class="contactInput" type="text" name="firstName"><br>
+                    Last name:<br>
+                    <input class="contactInput" type="text" name="lastName"><br>
+                    Email:<br>
+                    <input class="contactInput" type="text" name="email"><br>
+                    Subject:<br>
+                    <input class="contactInput" type="text" name="subject"><br>
+                    Message:<br>
+                    <textarea id="contactMessage" name="message" form="emailForm"></textarea>
+                    <input class="contactInput contactSubmit" type="submit" value="Submit">
                 </form>
             </div>
         </div>
