@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>About us</title>
+        <link rel="stylesheet" type="text/css" href="styles/contactUs.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="tabContainer">
+                <div id="titleBanner">
+                    <div id="image">
+                        <img src="images/TKE.png">
+                    </div>
+
+                    <div id="title">
+                        <div id="titleTextBox">
+                            TKE Alpha Zeta Chapter
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs">
+                    <a class="unclickedTab" href="home.html">
+                        <div>
+                            <div id="textBox">
+                                Home
+                            </div>
+                        </div>
+                    </a>
+
+                    <div id="aboutUs">
+                        <button onclick="dropdown()" class="dropbtn">About Us</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href='http://www.tke.org/join'>About TKE</a>
+                            <a href='aboutUs.html'>Our Principles</a>
+                            <a href='brothers.html'>Active Brothers</a>
+                            <a href='contactUs.html'>Contact Us</a>
+                        </div>
+                    </div>
+
+                    <a class="unclickedTab" href="rush.html">
+                        <div>
+                            <div id="textBox">
+                                Rush
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="unclickedTab" href="philanthropy.html">
+                        <div>
+                            <div id="textBox">
+                                Philanthropy
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="unclickedTab" href="tekeTalk.html">
+                        <div>
+                            <div id="textBox">
+                                Teke Talk
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="body">
+            <div id="contact">
+                <div id="contact-banner">
+                    <div id="contact-banner-text">
+                        Contact Us
+                    </div>
+                </div>
+
+                <div id="contact-form">
+                    <form method="POST">
+                        <input name="name" placeholder="Name">
+                        <input name="email" placeholder="Email">
+                        <input name="subject" placeholder="Subject">
+                        <input class="messageText" name="message" placeholder="Message">
+
+                        <input id="submit" name="submit" type="submit" value="Submit">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+        function dropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+    </body>
+</html>
