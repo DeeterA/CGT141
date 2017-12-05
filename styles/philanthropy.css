@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #header {
     background-color: black;
     width: 100%;
@@ -7,6 +11,59 @@
 
 #body {
     font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#content {
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 100%;
+}
+
+#content-side1 {
+    height: 100%;
+    width: 65%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#philCard1 {
+    background-color: darkgray;
+    height: 400px;
+    padding: 16px;
+}
+
+#goPuff {
+    width: 300px;
+    height: 300px;
+    margin-top: 16px;
+}
+
+#p1 {
+    float: right;
+    width: 290px;
+}
+
+#philCard2 {
+    margin-top: 40px;
+    background-color: darkgray;
+    height: 300px;
+}
+#content-side2 {
+    height: 100%;
+    background-color: red;
+    width: 30%;
+    float: left;
+    margin-top: 20px;
 }
 
 #tabContainer {

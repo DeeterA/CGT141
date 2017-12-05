@@ -66,24 +66,48 @@
             </div>
         </div>
 
+        <div id="content">
+            <div id="content-side1">
+                <div id="philCard1">
+                    <h2>
+                        TKE Alpha Zeta Partners with GoPuff on Purdue's Campus!
+                    </h2>
+
+                    <img id="goPuff" src="images/goPuff.jpg" />
+
+                    <p id="p1">
+                        At the start of the semester, the Alpha Zeta chapter of Tau Kappa Epsilon partnered with GoPuff on their tour of college campuses nationwide. GoPuff, a convenience store delivery service much like postmates or hungry boiler, worked with our chapter on securing booths o...
+                    </p>
+                </div>
+
+                <div id="philCard2">
+
+                </div>
+            </div>
+
+            <div id="content-side2">
+
+            </div>
+        </div>
+
         <script>
-        function dropdown() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
+            function dropdown() {
+                document.getElementById("myDropdown").classList.toggle("show");
             }
-          }
-        }
+
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+            }
         </script>
 
     </body>
