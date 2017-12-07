@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 #header {
     background-color: black;
     width: 100%;
@@ -7,6 +11,20 @@
 
 #body {
     font-family: 'Roboto', sans-serif;
+}
+
+.contactInput {
+    width: 935px;
+}
+
+.contactSubmit {
+    cursor: pointer;
+    height: 38px;
+}
+
+#contactMessage {
+    height: 99px;
+    width: 935px;
 }
 
 #tabContainer {
@@ -93,6 +111,90 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+#body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#contact {
+    width: 955px;
+    height: 500px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 10px;
+}
+
+#contact-banner {
+    height: 40px;
+    width: 470px;
+    background-color: #AD2624;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 30;
+    margin-bottom: 30;
+}
+
+#contact-banner-text {
+    font-size: 40;
+    width: 45%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form {
+    width: 850;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-left: 9px;
+}
+
+input, textarea {
+    font-family: 'Roboto', sans-serif;
+    width: 830;
+    height: 27px;
+    background: #EFEFEF;
+    border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+    margin-left: 9px;
+}
+
+#submit {
+    width: 200px;
+    padding: 2px;
+    cursor: pointer;
+    background-color: #AD2624;
+    color: white;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+	height:213px;
+}
+
+.messageText {
+    height: 100px;
 }
 
 .dropbtn {

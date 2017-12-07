@@ -1,8 +1,9 @@
 <html>
     <head>
-        <title>About us</title>
-        <link rel="stylesheet" type="text/css" href="styles/contactUs.css">
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="styles/contact.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/TKE.png">
     </head>
 
     <body>
@@ -65,6 +66,31 @@
                 </div>
             </div>
         </div>
+
+        <div id="body">
+            <div id="contact">
+                <div id="contact-banner">
+                    <div id="contact-banner-text">
+                        Contact Us
+                    </div>
+                </div>
+
+                <form id="emailForm" action="doContact.php" method="post">
+                    First name:<br>
+                    <input class="contactInput" type="text" name="firstName"><br>
+                    Last name:<br>
+                    <input class="contactInput" type="text" name="lastName"><br>
+                    Email:<br>
+                    <input class="contactInput" type="text" name="email"><br>
+                    Subject:<br>
+                    <input class="contactInput" type="text" name="subject"><br>
+                    Message:<br>
+                    <textarea id="contactMessage" name="message" form="emailForm"></textarea>
+                    <input class="contactInput contactSubmit" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
         <script>
         function dropdown() {
             document.getElementById("myDropdown").classList.toggle("show");

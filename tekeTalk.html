@@ -1,8 +1,9 @@
 <html>
     <head>
-        <title>About us</title>
+        <title>Teke Talk</title>
         <link rel="stylesheet" type="text/css" href="styles/tekeTalk.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/TKE.png">
     </head>
 
     <body>
@@ -66,6 +67,40 @@
             </div>
         </div>
 
+        <div id="body">
+            <div id="content">
+                <div id="content-side1">
+                    <h1>
+                        What is Teke Talk?
+                    </h1>
+
+                    <p>
+                        Teke Talk is Alpha Zeta's very own newsletter, keeping the community updated on everything that's been going on in the last couple of months. Anything from rush events to brother spotlights if it's happened at TKE we're going to be talking about it here.
+                    </p>
+
+                    <div id="ttSignUp">
+                        <form id="ttForm" action="doSignUp.php" method="post">
+                            First name:<br>
+                            <input class="signUpInput" type="text" name="firstName"><br>
+                            Last name:<br>
+                            <input class="signUpInput" type="text" name="lastName"><br>
+                            Email:<br>
+                            <input class="signUpInput" type="text" name="email"><br>
+                            <input class="signUpSubmit" type="submit" value="Submit">
+                        </form>
+                    </div>
+
+                    <p>
+                        Don't miss out! Subscribe to "Teke Talk" to receive your copy of the newsletter fresh off the presses!
+                    </p>
+                </div>
+    
+                <div id="content-side2">
+                    <embed src="images/tekeTalk/tekeTalkIssue1.pdf#scrollbar=0" width="100%" height="100%" />
+                </div>
+            </div>
+        </div>
+        
         <script>
         function dropdown() {
             document.getElementById("myDropdown").classList.toggle("show");
