@@ -1,5 +1,4 @@
 <html>
-    <!-- #393A3D; -->
     <head>
         <link rel="stylesheet" type="text/css" href="styles/home.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -20,59 +19,121 @@
                     </div>
                 </div>
                 <div id="tabs">
-                    <div id="home">
-                        <div id="textBox">
-                            Home
+                    <a class="clickedTab" href="home.html">
+                        <div>
+                            <div id="textBox">
+                                Home
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <div id="aboutUs">
-                        <div id="textBox">
-                            About Us
+                        <button onclick="dropdown()" class="dropbtn">About Us</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href='http://www.tke.org/join'>About TKE</a>
+                            <a href='aboutUs.html'>Our Principles</a>
+                            <a href='brothers.html'>Active Brothers</a>
+                            <a href='contactUs.html'>Contact Us</a>
                         </div>
                     </div>
 
-                    <div id="rush">
-                        <div id="textBox">
-                            Rush
+                    <a class="unclickedTab" href="rush.html">
+                        <div>
+                            <div id="textBox">
+                                Rush
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div id="philanthropy">
-                        <div id="textBox">
-                            Philanthropy
+                    <a class="unclickedTab" href="philanthropy.html">
+                        <div>
+                            <div id="textBox">
+                                Philanthropy
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div id="tekeTalk">
-                        <div id="textBox">
-                            Teke Talk
+                    <a class="unclickedTab" href="tekeTalk.html">
+                        <div>
+                            <div id="textBox">
+                                Teke Talk
+                            </div>
                         </div>
-                    </div>
+                    </a>
+
                 </div>
             </div>
         </div>
 
-        <div id="body">
-            <div id="bodybox">
-                <div id="slideshow">
+        <script>
+        function dropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+                <div id="main">
+                    <div id="bodybox">
+                        <div id="slideshow">
+
+                        </div>
+        </body>
+                    <div id="socialmedia">
+                      <div id="socialmediatext" class="boxtext">
+                        Follow us on Social Media
+                      </div>
+                      <div id="facebookicon">
+                          <a href="https://www.facebook.com/PurdueTKE">
+                              <img src="images/fbicon.png" height="50px" width="50px">
+                          </a>
+                      </div>
+                      <div id="instaicon">
+                          <a href="https://www.instagram.com/purdue_tke/">
+                              <img src="images/igicon.png" height="50px" width="50px">
+                          </a>
+                      </div>
+
+
+                    </div>
+                    <div id="donatetke">
+                      <div id="donatetketext" class="boxtext">
+                        Donate to TKE Alpha Zeta
+                      </div>
+                      <div id="donateicon">
+                          <a href="https://www.paypal.com/donate/?token=8DunsH-oMQWcHlMXbpJ1ShrXVDNBp9gIjJAmi142QyiFltAZBtT5QeEJcU5F9X6rof2P90&country.x=US&locale.x=">
+                              <img src="images/donate.png" height="40px" width="120px">
+                          </a>
+                        </div>
+
+                    </div>
+                    <div id="calender">
+
+                    </div>
+                    <div id="donatestjude">
+                        <div id="donatestjudetext" class="boxtext">
+                          Donate Directly to St. Jude
+                        </div>
+                        <a href="http://fundraising.stjude.org/site/TR/TKE/TKE?pg=entry&fr_id=77451">
+                            <img src="images/Dstjude.png" height="180px" width="380px" id="stjudepic">
+                        </a>
+                    </div>
+
+                    </div>
 
                 </div>
-            <div id="socialmedia">
 
-            </div>
-            <div id="donatetke">
 
-            </div>
-            <div id="calender">
-
-            </div>
-            <div id="donatestjude">
-
-            </div>
-
-            </div>
-
-        </div>
-    </body>
 </html>
