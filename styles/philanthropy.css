@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #header {
@@ -42,28 +43,144 @@ h2 {
     padding: 16px;
 }
 
+#philCard1-1 {
+    background-color: darkgray;
+    height: 500px;
+    padding: 16px;
+}
+
+#philCard2-1 {
+
+      background-color: darkgray;
+      height: 700px;
+      padding: 16px;
+}
+
+
 #goPuff {
     width: 300px;
     height: 300px;
     margin-top: 16px;
 }
 
+#goPuff-1 {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+#goPuffside {
+    width: 200px;
+    height: 160px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+}
+
+#goPuffside2 {
+    width: 70px;
+    height: 70px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+#goPuffsidetext {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#goPuffsidetext2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+    float: right;
+    width: 200px;
+}
+
+#winterizationsidetext {
+    font-size: 18px;
+    padding-top:25px;
+    padding-bottom: 10px;
+    float: right;
+    width: 200px;
+}
+
+#goPuffdate {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 23px;
+}
+
+#winterization{
+  width: 300px;
+  height: 180px;
+  margin-top: 16px;
+}
+
+#winterizationside{
+  width: 70px;
+  height: 45px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+#winterization-1{
+  width: 570px;
+  height: 300px;
+  margin-top: 16px;
+  padding-left: 14px;
+}
+
 #p1 {
     float: right;
     width: 290px;
+    font-size: 17px;
+}
+
+#p1-1 {
+    font-size: 21px;
+    width: 580px;
+}
+
+#p1-2 {
+    font-size: 21px;
+    float: right;
+    padding-right: 10px;
+    width: 290px;
+    margin-top: -22px;
+}
+
+#p2-1{
+
+      font-size: 19px;
+      width: 600px;
+}
+
+#readmore {
+    padding-left: 60%;
+    font-size: 12px;
+    color: darkblue;
 }
 
 #philCard2 {
     margin-top: 40px;
     background-color: darkgray;
-    height: 300px;
+    height: 237px;
+    padding: 16px;
+    margin-bottom: 25px;
 }
 #content-side2 {
     height: 100%;
-    background-color: red;
+    background-color: grey;
     width: 30%;
     float: left;
     margin-top: 20px;
+}
+
+#toptextside {
+  font-size: 28;
+  padding-bottom: 30px;
+  margin: 15px;
 }
 
 #tabContainer {

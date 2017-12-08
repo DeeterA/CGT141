@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <form id="emailForm" action="doContact.php" method="post">
+                <form id="emailForm" name="emailForm" action="doContact.php" method="post" onsubmit="return validateForm()">
                     First name:<br>
                     <input class="contactInput" type="text" name="firstName"><br>
                     Last name:<br>
@@ -108,6 +108,38 @@
               }
             }
           }
+        }
+
+        function validateForm() {
+            var x = document.forms["emailForm"]["firstName"].value;
+            if (x == "") {
+                alert("First name must be filled out");
+                return false;
+            }
+
+            x = document.forms["emailForm"]["lastName"].value;
+            if (x == "") {
+                alert("Last name must be filled out");
+                return false;
+            }
+
+            x = document.forms["emailForm"]["email"].value;
+            if (x == "") {
+                alert("Email address must be filled out");
+                return false;
+            }
+
+            x = document.forms["emailForm"]["subject"].value;
+            if (x == "") {
+                alert("Subject must be filled out");
+                return false;
+            }
+
+            x = document.forms["emailForm"]["message"].value;
+            if (x == "") {
+                alert("Message must be filled out");
+                return false;
+            }
         }
         </script>
     </body>
